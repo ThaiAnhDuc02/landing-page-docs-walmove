@@ -1,30 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { useConfig, DocsThemeConfig } from 'nextra-theme-docs';
+import { useConfig, DocsThemeConfig, useTheme } from 'nextra-theme-docs';
 import Link from 'next/link';
-import SelectVersion from './components/select-version/SelectVersion';
+import SparklesText from "@/components/ui/sparkles-text/SparklesText";
+import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';
+
+const DynamicThemeToggle = dynamic(() => import('components/ui/theme-toggle/ThemeToggle'), {
+  ssr: false,
+});
 
 const config: DocsThemeConfig = {
   head: function useHead() {
     const config = useConfig<{ description?: string; image?: string }>();
-    const description = config.frontMatter.description || 'Website description';
-    const title = `${config.title} | Atopus`;
+    const description = config.frontMatter.description || 'Cloud PC on Sui Blockchain';
+    const title = `${config.title} | Walnet - Cloud PC on Sui Blockchain`;
     return (
       <>
         <title>{title}</title>
         <meta property="og:title" content={title} />
         <meta name="description" content={description} />
         <meta property="og:description" content={description} />
-
-        {/* Favicons, meta */}
-        {/* Get favicon here from png */}
-        {/* https://favicon.io/favicon-converter/#google_vignette */}
-        <link rel="apple-touch-icon" sizes="180x180" href="/logo/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/logo/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png" />
-        <link rel="manifest" href="/logo/site.webmanifest" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logo/logo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/logo/logo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/logo/logo.png" />
       </>
     );
+  },
+  navbar: {
+    extraContent: <DynamicThemeToggle />,
   },
   notFound: {
     content: () => {
@@ -76,8 +80,20 @@ const config: DocsThemeConfig = {
           href="/"
           className="hidden sm:flex items-center text-current no-underline hover:opacity-75 ltr:mr-auto rtl:ml-auto"
         >
-          <Image src="/logo/logo.png" alt="logo" width={45} height={45} />
-          <span className="select-none font-bold ltr:ml-2 rtl:mr-2 inline">Atopus</span>
+
+          <div className="flex items-center relative">
+            <SparklesText
+              text="WA"
+              sparklesCount={4}
+              className='text-xl font-extrabold text-blue-400'
+              colors={{ first: '#A855F7', second: '#A855F7' }}
+            />
+            <Image src="/logo/logo.png" alt="logo" width={20} height={20} />
+            <span className="text-xl font-extrabold bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
+              NET
+            </span>
+            {/* <span className="absolute inset-0 blur-3xl bg-gradient-to-r opacity-30 from-blue-400 via-purple-500 to-pink-500 opacity-60 group-hover:opacity-50 transition-opacity duration-300"></span> */}
+          </div>
         </Link>
 
         {
@@ -112,15 +128,15 @@ const config: DocsThemeConfig = {
 
   footer: {
     component: (
-      <footer className="bg-white dark:bg-neutral-900">
-        <hr className="dark:nx-border-neutral-800" />
+      <footer className="bg-neutral-300 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50">
+        <hr className="dark:border-neutral-800" />
         <div className="mx-auto max-w-[1440px] p-6 lg:py-10">
           <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            <span className="text-sm  sm:text-center dark:text-gray-400">
               © {new Date().getFullYear()} Atopus.{' '}
             </span>
             <div className="flex mt-4 sm:justify-center sm:mt-0">
-              <Link href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+              <Link href="#" className=" hover:text-gray-900 dark:hover:text-white">
                 <svg
                   className="w-4 h-4"
                   aria-hidden="true"
@@ -136,7 +152,7 @@ const config: DocsThemeConfig = {
                 </svg>
                 <span className="sr-only">Facebook page</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+              <Link href="#" className=" hover:text-gray-900 dark:hover:text-white ms-5">
                 <svg
                   className="w-4 h-4"
                   aria-hidden="true"
@@ -148,7 +164,7 @@ const config: DocsThemeConfig = {
                 </svg>
                 <span className="sr-only">Discord community</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+              <Link href="#" className=" hover:text-gray-900 dark:hover:text-white ms-5">
                 <svg
                   className="w-4 h-4"
                   aria-hidden="true"
@@ -164,7 +180,7 @@ const config: DocsThemeConfig = {
                 </svg>
                 <span className="sr-only">Twitter page</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+              <Link href="#" className=" hover:text-gray-900 dark:hover:text-white ms-5">
                 <svg
                   className="w-4 h-4"
                   aria-hidden="true"
@@ -179,22 +195,6 @@ const config: DocsThemeConfig = {
                   />
                 </svg>
                 <span className="sr-only">GitHub account</span>
-              </Link>
-              <Link href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                <svg
-                  className="w-4 h-4"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span className="sr-only">Dribbble account</span>
               </Link>
             </div>
           </div>

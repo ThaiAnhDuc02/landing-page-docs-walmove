@@ -1,34 +1,28 @@
 ---
-title: Nextra Personal Website Template
+title: Walnet - Cloud PC on Sui Blockchain
 ---
 
-import Link from 'next/link';
+import { FaCloud, FaGamepad, FaCode } from 'react-icons/fa';
+import HeroSection from '@/components/sections/hero-section/HeroSection';
+import KeyFeatureSection from '@/components/sections/key-feature-section/KeyFeatureSection';
+import ShowcaseSection from '@/components/sections/showcase/ShowcaseSection';
+import { VideoProvider } from '@/contexts/VideoContext';
+import HeroVideoDialog from '@/components/ui/hero-video-dialog';
+import VideoHeroSection from '@/components/sections/video-hero-section/VideoHeroSection';
+import HowItWorks from '@/components/sections/how-it-works/HowItWorks';
+import FAQSection from '@/components/sections/faq-section/FAQSection';
 
 export default function IndexPage() {
   return (
-    <div className="relative isolate min-h-[80vh]">
-      <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight dark:text-white text-gray-900 sm:text-4xl ">
-            Nextra Personal Website Template
-          </h2>
-          <p className="p-3">Project using Nextra v3.0.0 alpha version</p>
-          <p>
-            <Link href="https://github.com/namnguyenthanhwork/nextra-personal-website-template" className="link">
-              Github Project
-            </Link>
-            <br />
-            <Link href="https://nextra.site/docs" className="link">
-              Nextra Documentation
-            </Link>
-            <br />
-            <Link href="https://the-guild.dev/blog/nextra-3" className="link">
-              Nextra v3 alpha
-            </Link>
-          </p>
-        </div>
+    <VideoProvider>
+      <div className="min-h-screen dark:bg-black bg-white">
+        <HeroSection />
+        <ShowcaseSection />
+        <KeyFeatureSection />
+        <VideoHeroSection />
+        <HowItWorks />
       </div>
-    </div>
+    </VideoProvider>
   );
 }
 
