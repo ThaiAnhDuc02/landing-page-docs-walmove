@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "c/lib/utils";
+import { cn } from "@/lib/utils";
 
 type TColorProp = string | string[];
 
