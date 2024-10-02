@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -56,7 +56,10 @@ export const StickyScroll = ({
                   animate={{
                     opacity: activeCard === index ? 1 : 0.3,
                   }}
-                  className="text-2xl font-bold text-slate-100"
+                  style={activeCard === index ? { color: "#60a5fa" } : {}}
+                  className={cn(
+                    "text-2xl font-bold adaptive-text",
+                  )}
                 >
                   {item.title}
                 </motion.h2>
@@ -67,7 +70,10 @@ export const StickyScroll = ({
                   animate={{
                     opacity: activeCard === index ? 1 : 0.3,
                   }}
-                  className="text-kg text-slate-300 max-w-sm mt-10"
+                  className={cn(
+                    "text-kg max-w-sm mt-10",
+                    activeCard === index ? "text-foreground" : "text-muted-foreground"
+                  )}
                 >
                   {item.description}
                 </motion.p>
@@ -79,12 +85,17 @@ export const StickyScroll = ({
       </div>
       <div
         className={cn(
-          "hidden lg:block h-[400px] w-[400px] rounded-md sticky top-10 overflow-hidden", // Tăng width từ 400px lên 600px
-          "flex items-center justify-center",
+          "hidden lg:block h-[400px] w-[400px] rounded-md sticky top-10 overflow-hidden",
+          "shadow-lg", // Thêm shadow để tạo độ sâu
+          "bg-white dark:bg-neutral-950", // Thêm màu nền
+          "transition-all duration-300 ease-in-out", // Thêm hiệu ứng chuyển đổi
+          "hover:shadow-xl hover:scale-105", // Hiệu ứng khi hover
           contentClassName
         )}
       >
-        {content[activeCard].content ?? null}
+        <div className="w-full h-full flex items-center justify-center p-4">
+          {content[activeCard].content ?? null}
+        </div>
       </div>
     </motion.div>
   );

@@ -17,7 +17,7 @@ const content = [
           height={188}
           quality={100}
           src="/assets/about/product_dark.png"
-          className="w-full md:w-3/4 lg:w-1/2 h-auto object-contain"
+          className="w-full h-auto object-contain"
           alt="Login to WALNET Cloud PC"
         />
       </div>
@@ -34,7 +34,7 @@ const content = [
           height={188}
           quality={100}
           src="/assets/about/product_white.png"
-          className="w-full md:w-3/4 lg:w-1/2 h-auto object-contain"
+          className="w-full h-auto object-contain"
           alt="Login to WALNET Cloud PC"
         />
       </div>
@@ -51,7 +51,7 @@ const content = [
           height={188}
           quality={100}
           src="/assets/about/product_dark.png"
-          className="w-full md:w-3/4 lg:w-1/2 h-auto object-contain"
+          className="w-full h-auto object-contain"
           alt="Login to WALNET Cloud PC"
         />
       </div>
@@ -68,7 +68,7 @@ const content = [
           height={188}
           quality={100}
           src="/assets/about/product_white.png"
-          className="w-full md:w-3/4 lg:w-1/2 h-auto object-contain"
+          className="w-full h-auto object-contain"
           alt="Login to WALNET Cloud PC"
         />
       </div>
