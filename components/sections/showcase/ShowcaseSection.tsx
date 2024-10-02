@@ -27,7 +27,7 @@ export default function ShowcaseSection() {
     offset: ["start end", "end start"]
   });
 
-  const rotateY = useTransform(scrollYProgress, [0, 0.3, 0.4, 1], [60, 0, 0, -60]);
+  const rotateY = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [60, 0, 0, -60]);
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8]);
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
   const z = useTransform(scrollYProgress, [0, 0.5, 1], [-500, 0, -500]);
