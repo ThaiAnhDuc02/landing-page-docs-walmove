@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
           <BlurFade delay={0.25} duration={0.75} inView>
             <WordPullUp
               className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-wider adaptive-text"
-              words="Play AAA Games & Access dApps Seamlessly on the Sui Blockchain"
+              words="Play AAA Games & Access dApps Seamlessly on the Aptos"
             />
           </BlurFade>
         </div>

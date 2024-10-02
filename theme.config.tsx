@@ -13,8 +13,8 @@ const DynamicThemeToggle = dynamic(() => import('components/ui/theme-toggle/Them
 const config: DocsThemeConfig = {
   head: function useHead() {
     const config = useConfig<{ description?: string; image?: string }>();
-    const description = config.frontMatter.description || 'Cloud PC on Sui Blockchain';
-    const title = `${config.title} | Walnet - Cloud PC on Sui Blockchain`;
+    const description = config.frontMatter.description || 'Cloud PC on Aptos';
+    const title = `${config.title} | Walnet - Cloud PC on Aptos`;
     return (
       <>
         <title>{title}</title>

@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo } from "react";
-import { motion, Variants } from "framer-motion";
+import { useMemo, useRef } from "react";
+import { motion, Variants, useInView } from "framer-motion";
 
 type FadeTextProps = {
   className?: string;
@@ -15,10 +15,13 @@ export function FadeText({
   className,
   framerProps = {
     hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { type: "spring" } },
+    visible: { opacity: 1, transition: { type: "spring" } },
   },
   text,
 }: FadeTextProps) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
+
   const directionOffset = useMemo(() => {
     const map = { up: 10, down: -10, left: -10, right: 10 };
     return map[direction];
@@ -27,7 +30,7 @@ export function FadeText({
   const axis = direction === "up" || direction === "down" ? "y" : "x";
 
   const FADE_ANIMATION_VARIANTS = useMemo(() => {
-    const { hidden, show, ...rest } = framerProps as {
+    const { hidden, visible, ...rest } = framerProps as {
       [name: string]: { [name: string]: number; opacity: number };
     };
 
@@ -38,19 +41,19 @@ export function FadeText({
         opacity: hidden?.opacity ?? 0,
         [axis]: hidden?.[axis] ?? directionOffset,
       },
-      show: {
-        ...(show ?? {}),
-        opacity: show?.opacity ?? 1,
-        [axis]: show?.[axis] ?? 0,
+      visible: {
+        ...(visible ?? {}),
+        opacity: visible?.opacity ?? 1,
+        [axis]: visible?.[axis] ?? 0,
       },
     };
   }, [directionOffset, axis, framerProps]);
 
   return (
     <motion.div
+      ref={ref}
       initial="hidden"
-      animate="show"
-      viewport={{ once: true }}
+      animate={isInView ? "visible" : "hidden"}
       variants={FADE_ANIMATION_VARIANTS}
     >
       <motion.span className={className}>{text}</motion.span>
