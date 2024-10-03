@@ -1,9 +1,9 @@
-import { createNextraConfig } from 'nextra';
+import nextra from 'nextra'
 
-const withNextra = createNextraConfig({
+const withNextra = nextra({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.tsx',
-});
+})
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -20,6 +20,6 @@ const nextConfig = {
       "api.microlink.io", // Microlink Image Preview
     ],
   },
-};
+}
 
-export default withNextra(nextConfig);
+export default withNextra(nextConfig)
