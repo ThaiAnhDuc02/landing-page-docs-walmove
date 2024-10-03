@@ -3,7 +3,8 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.tsx',
 })
 
-module.exports = withNextra({
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   redirects: () => [
     {
       source: '/docs',
@@ -11,5 +12,12 @@ module.exports = withNextra({
       permanent: true,
     },
   ],
-  reactStrictMode: true
-});
+  reactStrictMode: true,
+  images: {
+    domains: [
+      "api.microlink.io", // Microlink Image Preview
+    ],
+  },
+};
+
+module.exports = withNextra(nextConfig);

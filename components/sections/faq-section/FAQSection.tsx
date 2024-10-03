@@ -1,5 +1,14 @@
 import React from 'react';
-import { FaChevronRight } from 'react-icons/fa';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion/Accordion"
+import { BackgroundBeams } from '@/components/ui/background-beams';
+import { MagicCard } from '@/components/ui/magic-card';
+import { useTheme } from 'nextra-theme-docs';
+import BlurFade from '@/components/ui/blur-fade';
 
 const faqItems = [
   {
@@ -21,30 +30,51 @@ const faqItems = [
 ];
 
 const FAQSection: React.FC = () => {
+  const { theme } = useTheme();
+
   return (
-    <section className="py-20 bg-[#1e2030] text-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          Frequently Asked Questions about WALNET
-        </h2>
+    <section className="py-20 background relative overflow-hidden">
+      <BackgroundBeams />
+      <div className="container mx-auto px-4 max-w-4xl relative z-10">
+        <div className="text-5xl font-bold text-center mb-12 adaptive-text">
+          FAQ
+        </div>
 
-        <div className="max-w-3xl mx-auto mb-12">
+        <Accordion type="single" collapsible className="space-y-6">
           {faqItems.map((item, index) => (
-            <div key={index} className="mb-6">
-              <h3 className="text-xl font-semibold mb-2 flex items-center">
-                <FaChevronRight className="text-purple-500 mr-2" />
-                {item.question}
-              </h3>
-              <p className="text-gray-300 ml-6">{item.answer}</p>
-            </div>
+            <BlurFade key={index} inView delay={0.25 * index} yOffset={10}>
+              <AccordionItem value={`item-${index}`}>
+                {theme === "dark" ? (
+                  <MagicCard gradientOpacity={1} className='shadow-lg flex flex-col justify-stretch'>
+                    <AccordionTrigger
+                      className="px-6 pb-5 text-lg font-semibold adaptive-text transition-all"
+                    >
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent
+                      className="px-6 pb-5 adaptive-text"
+                    >
+                      {item.answer}
+                    </AccordionContent>
+                  </MagicCard>
+                ) : (
+                  <MagicCard gradientOpacity={0.2} className='shadow-lg flex flex-col justify-stretch'>
+                    <AccordionTrigger
+                      className="px-6 pb-5 text-lg font-semibold adaptive-text transition-all"
+                    >
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent
+                      className="px-6 pb-5 adaptive-text"
+                    >
+                      {item.answer}
+                    </AccordionContent>
+                  </MagicCard>
+                )}
+              </AccordionItem>
+            </BlurFade>
           ))}
-        </div>
-
-        <div className="text-center">
-          <button className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-6 rounded-full transition duration-300">
-            Read More FAQs
-          </button>
-        </div>
+        </Accordion>
       </div>
     </section>
   );

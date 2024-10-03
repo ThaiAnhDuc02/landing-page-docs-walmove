@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
           <BlurFade delay={0.25} duration={0.75} inView>
             <WordPullUp
               className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-wider adaptive-text"
-              words="Play AAA Games & Access dApps Seamlessly on the Sui Blockchain"
+              words="Play AAA Games & Access dApps Seamlessly on the Aptos"
             />
           </BlurFade>
         </div>
@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
 
         <div className='mb-[-10px]'>
           <BlurFade delay={0.25 * 7} inView>
-            <p className="text-xl adaptive-text mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-adaptive-text mb-12 max-w-3xl mx-auto">
               Revolutionize your gaming and dApp experience with WALNET. Play AAA games and use dApps effortlessly from anywhere - all you need is an internet connection.
             </p>
           </BlurFade>
