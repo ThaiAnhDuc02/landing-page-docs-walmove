@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start"
   },
+  "compilerOptions": {
+    "module": "esnext"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shuding/nextra-docs-template.git"
