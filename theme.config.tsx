@@ -11,49 +11,6 @@ const DynamicThemeToggle = dynamic(() => import('components/ui/theme-toggle/Them
   ssr: false,
 });
 
-const VersionSelector = () => {
-  const [selectedVersion, setSelectedVersion] = useState('');
-
-  useEffect(() => {
-    const pathArray = window.location.pathname.split('/');
-    const currentVersion = pathArray[pathArray.indexOf('docs') + 1];
-
-    // Kiểm tra xem phiên bản hiện tại có trong danh sách không
-    if (APP_CONFIG.versions.includes(currentVersion)) {
-      setSelectedVersion(currentVersion);
-    } else {
-      // Nếu không tìm thấy, sử dụng phiên bản mới nhất
-      setSelectedVersion(APP_CONFIG.versions[0]);
-    }
-
-    console.log('Current URL:', window.location.pathname);
-    console.log('Detected version:', currentVersion);
-  }, []);
-
-  const handleChange = (e) => {
-    const version = e.target.value;
-    setSelectedVersion(version);
-    window.location.href = `/docs/${version}`;
-  };
-
-  console.log('Selected version:', selectedVersion);
-
-  if (!selectedVersion) return null; // Không render nếu chưa có phiên bản được chọn
-
-  return (
-    <select
-      value={selectedVersion}
-      onChange={handleChange}
-      className="bg-gray-100 sm:ms-[80px] py-2 px-4 pe-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-    >
-      {APP_CONFIG.versions.map((version) => (
-        <option key={version} value={version}>
-          {version}
-        </option>
-      ))}
-    </select>
-  );
-};
 const config: DocsThemeConfig = {
   head: function useHead() {
     const config = useConfig<{ description?: string; image?: string }>();
@@ -111,7 +68,6 @@ const config: DocsThemeConfig = {
             </span>
           </div>
         </Link>
-        {renderSelect && <VersionSelector />}
       </div>
     );
   },
