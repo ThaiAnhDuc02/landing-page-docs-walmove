@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
 
         <div className='mb-[-10px]'>
           <BlurFade delay={0.25 * 7} inView>
-            <p className="text-xl adaptive-text mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-adaptive-text mb-12 max-w-3xl mx-auto">
               Revolutionize your gaming and dApp experience with WALNET. Play AAA games and use dApps effortlessly from anywhere - all you need is an internet connection.
             </p>
           </BlurFade>

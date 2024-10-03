@@ -36,7 +36,7 @@ const FAQSection: React.FC = () => {
     <section className="py-20 background relative overflow-hidden">
       <BackgroundBeams />
       <div className="container mx-auto px-4 max-w-4xl relative z-10">
-        <div className="text-5xl font-bold text-center mb-12 text-foreground">
+        <div className="text-5xl font-bold text-center mb-12 adaptive-text">
           FAQ
         </div>
 
@@ -47,12 +47,12 @@ const FAQSection: React.FC = () => {
                 {theme === "dark" ? (
                   <MagicCard gradientOpacity={1} className='shadow-lg flex flex-col justify-stretch'>
                     <AccordionTrigger
-                      className="px-6 pb-5 text-lg font-semibold text-foreground transition-all"
+                      className="px-6 pb-5 text-lg font-semibold adaptive-text transition-all"
                     >
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent
-                      className="px-6 pb-5 text-muted-foreground"
+                      className="px-6 pb-5 adaptive-text"
                     >
                       {item.answer}
                     </AccordionContent>
@@ -60,12 +60,12 @@ const FAQSection: React.FC = () => {
                 ) : (
                   <MagicCard gradientOpacity={0.2} className='shadow-lg flex flex-col justify-stretch'>
                     <AccordionTrigger
-                      className="px-6 pb-5 text-lg font-semibold text-foreground transition-all"
+                      className="px-6 pb-5 text-lg font-semibold adaptive-text transition-all"
                     >
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent
-                      className="px-6 pb-5 text-muted-foreground"
+                      className="px-6 pb-5 adaptive-text"
                     >
                       {item.answer}
                     </AccordionContent>

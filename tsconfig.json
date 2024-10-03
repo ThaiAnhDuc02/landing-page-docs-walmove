@@ -23,14 +23,17 @@
       "@/*": [
         "./*"
       ]
-    }
+    },
+    "types": [
+      "node"
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "pages/_document.tsx",
-    "pages/_app.mdx",
+    "pages/_app.tsx",
     "pages/user-guide/index.mdx"
   ],
   "exclude": [

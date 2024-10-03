@@ -24,7 +24,7 @@ export default function VideoHeroSection() {
       <VelocityScroll
         text="Walnet In Action"
         default_velocity={2}
-        className="font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
+        className="font-display adaptive-text text-center text-4xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-6xl md:leading-[5rem]"
       />
       <div className="container mx-auto py-14">
         <BlurFade delay={0.5} inView className="max-w-2xl mx-auto">

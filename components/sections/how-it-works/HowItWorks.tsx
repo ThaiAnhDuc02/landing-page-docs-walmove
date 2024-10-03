@@ -80,12 +80,12 @@ const HowItWorks: React.FC = () => {
   return (
     <section className="py-24 background">
       <div className="container mx-auto px-4">
-        <WordFadeIn delay={0.25} className="text-5xl font-bold text-center mb-8 text-foreground" words="HOW IT WORKS" />
+        <WordFadeIn delay={0.25} className="text-5xl font-bold adaptive-text text-center mb-8" words="HOW IT WORKS" />
         <div
           className="max-w-3xl mx-auto mb-16 text-center"
         >
           <FadeText
-            className="text-xl text-muted-foreground"
+            className="text-xl adaptive-text"
             direction="right"
             framerProps={{
               show: { transition: { delay: 0.5, duration: 1 } },
