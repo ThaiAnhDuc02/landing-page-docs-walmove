@@ -55,7 +55,7 @@ const config: DocsThemeConfig = {
     return (
       <div className='flex flex-row items-center'>
         <Link href="/" className="hidden sm:flex items-center text-current no-underline hover:opacity-75 ltr:mr-auto rtl:ml-auto">
-          <div className="flex items-center relative">
+          {/* <div className="flex items-center relative">
             <SparklesText
               text="WA"
               sparklesCount={4}
@@ -66,7 +66,8 @@ const config: DocsThemeConfig = {
             <span className="text-xl font-extrabold bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
               NET
             </span>
-          </div>
+          </div> */}
+          <Image src={APP_CONFIG.logo} alt="logo" width={35} height={35} />
         </Link>
       </div>
     );
