@@ -40,13 +40,10 @@ export const StickyScroll = ({
   });
 
   return (
-    <motion.div
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 hide-scrollbar"
-      ref={ref}
-    >
-      <div className="div relative flex items-start px-4">
-        <div className="max-w-2xl">
-          <TracingBeam className="px-6" scrollRef={ref}>
+    <div className="flex w-full h-[30rem] relative flex-row justify-center">
+      <div className="w-full overflow-y-auto hide-scrollbar" ref={ref}>
+        <div className="">
+          <TracingBeam scrollRef={ref}>
             {content.map((item, index) => (
               <div key={item.title + index} className="my-20">
                 <motion.h2
@@ -83,20 +80,22 @@ export const StickyScroll = ({
           </TracingBeam>
         </div>
       </div>
-      <div
-        className={cn(
-          "hidden lg:block h-[400px] w-[400px] rounded-md sticky top-10 overflow-hidden",
-          "shadow-lg", // Thêm shadow để tạo độ sâu
-          "bg-white dark:bg-neutral-950", // Thêm màu nền
-          "transition-all duration-300 ease-in-out", // Thêm hiệu ứng chuyển đổi
-          "hover:shadow-xl hover:scale-105", // Hiệu ứng khi hover
-          contentClassName
-        )}
-      >
-        <div className="w-full h-full flex items-center justify-center p-4">
-          {content[activeCard].content ?? null}
+      <div className="w-2/5 absolute right-[8%] top-[50%]">
+        <div
+          className={cn(
+            "h-auto w-full rounded-md absolute top-1/2 left-0 transform -translate-y-1/2 overflow-hidden",
+            "shadow-2xl", // Thêm shadow để tạo độ sâu
+            "bg-neutral-900/5 dark:bg-neutral-950", // Thêm màu nền
+            "transition-all duration-300 ease-in-out", // Thêm hiệu ứng chuyển đổi
+            "hover:shadow-2xl hover:scale-105", // Hiệu ứng khi hover
+            contentClassName
+          )}
+        >
+          <div className="w-full h-auto flex items-center justify-center p-4">
+            {content[activeCard].content ?? null}
+          </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };

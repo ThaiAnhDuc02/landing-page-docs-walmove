@@ -66,7 +66,11 @@ const HeroSection: React.FC = () => {
 
         <BlurFade delay={0.25 * 8} inView>
           <div className='flex flex-row items-center justify-center md:flex-row gap-x-6'>
-            <ShimmerButton className="hover:scale-[1.15] shadow-2xl m-auto">
+            <ShimmerButton
+              onClick={() => {
+                window.open("https://walnet-deploy.vercel.app/", "_blank");
+              }}
+              className="hover:scale-[1.15] shadow-2xl m-auto">
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                 Get Started for Free
               </span>

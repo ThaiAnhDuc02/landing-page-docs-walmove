@@ -5,68 +5,75 @@ import { SparklesCore } from '@/components/ui/sparkles';
 import { cn } from "@/lib/utils";
 import {
   IconAdjustmentsBolt,
+  IconApps,
   IconCloud,
   IconCurrencyDollar,
+  IconDeviceGamepad2,
+  IconDeviceLaptop,
+  IconDevices,
   IconEaseInOut,
   IconHeart,
   IconHelp,
+  IconPlayerPlay,
+  IconRotate,
   IconRouteAltLeft,
   IconTerminal2,
+  IconWorld,
 } from "@tabler/icons-react";
 import BlurFade from '@/components/ui/blur-fade';
 
 const features = [
   {
-    title: "Built for developers",
+    title: "AAA Gaming On-the-Go",
     description:
-      "Built for engineers, developers, dreamers, thinkers and doers.",
-    icon: <IconTerminal2 />,
+      "Play high-end games anywhere, anytime without the need for expensive hardware.",
+    icon: <IconDeviceGamepad2 />,
   },
   {
-    title: "Ease of use",
+    title: "Seamless dApp Access",
     description:
-      "It's as easy as using an Apple, and as expensive as buying one.",
-    icon: <IconEaseInOut />,
+      "Use decentralized applications effortlessly, regardless of your device's capabilities.",
+    icon: <IconApps />,
   },
   {
-    title: "Pricing like no other",
+    title: "No High-End Hardware Required",
     description:
-      "Our prices are best in the market. No cap, no lock, no credit card required.",
-    icon: <IconCurrencyDollar />,
+      "Experience top-tier performance without investing in costly gaming rigs or powerful devices.",
+    icon: <IconDeviceLaptop />,
   },
   {
-    title: "100% Uptime guarantee",
-    description: "We just cannot be taken down by anyone.",
+    title: "Internet-Powered Gaming",
+    description: "All you need is an internet connection to dive into your favorite games and dApps.",
+    icon: <IconWorld />,
+  },
+  {
+    title: "Cross-Platform Compatibility",
+    description: "Enjoy a consistent experience across various devices and operating systems.",
+    icon: <IconDevices />,
+  },
+  {
+    title: "Cloud-Based Performance",
+    description:
+      "Leverage cloud technology for smooth, high-performance gaming and dApp usage.",
     icon: <IconCloud />,
   },
   {
-    title: "Multi-tenant Architecture",
-    description: "You can simply share passwords instead of buying new seats",
-    icon: <IconRouteAltLeft />,
-  },
-  {
-    title: "24/7 Customer Support",
+    title: "Instant Access",
     description:
-      "We are available a 100% of the time. Atleast our AI Agents are.",
-    icon: <IconHelp />,
+      "No lengthy downloads or installations. Jump right into your games and dApps instantly.",
+    icon: <IconPlayerPlay />,
   },
   {
-    title: "Money back guarantee",
-    description:
-      "If you donot like EveryAI, we will convince you to like us.",
-    icon: <IconAdjustmentsBolt />,
-  },
-  {
-    title: "And everything else",
-    description: "I just ran out of copy ideas. Accept my sincere apologies",
-    icon: <IconHeart />,
+    title: "Revolutionary Gaming Experience",
+    description: "Transform the way you play and interact with blockchain applications.",
+    icon: <IconRotate />,
   },
 ];
 
 const KeyFeatureSection: React.FC = () => {
   return (
     <section className="py-20 mb-20">
-      <div className="container max-w-6xl mx-auto px-4">
+      <div className="container max-w-7xl mx-auto px-4">
         <div className="flex flex-col items-center justify-center relative z-10 mx-auto h-56">
           <TextRevealByWord
             text="THE FEATURES"

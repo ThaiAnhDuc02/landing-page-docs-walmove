@@ -95,7 +95,7 @@ export default function ShowcaseSection() {
                   className={cn(
                     "w-full h-auto rounded-lg overflow-hidden"
                   )}
-                  src={theme === "dark" ? "assets/about/product_dark.png" : "assets/about/product_white.png"}
+                  src={theme === "dark" ? "assets/about/how_to_work/blank.png" : "/assets/about/how_to_work/blank.png"}
                 />
               </div>
             </motion.div>
@@ -117,9 +117,9 @@ export default function ShowcaseSection() {
             <BlurFade delay={0.5} inView>
               <footer className="mt-6 relative z-10">
                 <div className="text-base font-semibold adaptive-text">Harry - Founder of
-                  <LinkPreview isStatic url="https://walnet.weminal.com/" imageSrc={theme === "dark" ? '/assets/about/product_preview_dark.png' : '/assets/about/product_preview_white.png'}>
+                  <LinkPreview isStatic url="https://walnet-deploy.vercel.app/" imageSrc={theme === "dark" ? '/assets/about/how_to_work/blank.png' : '/assets/about/how_to_work/blank.png'}>
                     {" "}
-                    <a href="https://walnet.weminal.com/" target="_blank" className="text-neutral-900 py-1 px-2 bg-yellow-400 rounded-full">Walnet</a>
+                    <a href="https://walnet-deploy.vercel.app/" target="_blank" className="text-neutral-900 py-1 px-2 bg-yellow-400 rounded-full">Walnet</a>
                   </LinkPreview>
                 </div>
               </footer>

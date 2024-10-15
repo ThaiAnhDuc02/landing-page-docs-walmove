@@ -11,6 +11,7 @@ export interface ShimmerButtonProps
   background?: string;
   className?: string;
   children?: React.ReactNode;
+  onClick?: () => void;
 }
 
 const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
@@ -23,12 +24,14 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
       background = "rgba(0, 0, 0, 1)",
       className,
       children,
+      onClick,
       ...props
     },
     ref,
   ) => {
     return (
       <button
+        onClick={onClick}
         style={
           {
             "--spread": "90deg",
