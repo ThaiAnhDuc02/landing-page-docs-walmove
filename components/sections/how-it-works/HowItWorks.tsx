@@ -13,7 +13,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <img
-          src="/assets/about/how_to_work/login1.png"
+          src="/assets/about/how_to_work/login3.png"
           className="w-full h-auto object-contain"
           alt="Login to WALNET Cloud PC"
         />
