@@ -68,7 +68,7 @@ const HeroSection: React.FC = () => {
           <div className='flex flex-row items-center justify-center md:flex-row gap-x-6'>
             <ShimmerButton
               onClick={() => {
-                window.open("https://walnet-deploy.vercel.app/", "_blank");
+                window.open("https://walnet.vercel.app/", "_blank");
               }}
               className="hover:scale-[1.15] shadow-2xl m-auto">
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">

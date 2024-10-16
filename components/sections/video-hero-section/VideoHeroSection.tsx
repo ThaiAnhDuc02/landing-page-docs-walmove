@@ -46,7 +46,7 @@ export default function VideoHeroSection() {
       </div>
       <HeroVideoDialog
         animationStyle="from-center"
-        videoSrc="https://www.youtube.com/embed/58L9HJXTgUI?si=n7hOnnhdkNxmldYH"
+        videoSrc="https://www.youtube.com/embed/ngRrC5U1R-g?si=Ux5Mcu-QUoYsgUAu&amp"
         thumbnailSrc="assets/about/thumbnail_video.png"
         thumbnailAlt="Walnet Demo Video"
       />
