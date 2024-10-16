@@ -2,8 +2,8 @@ export const APP_CONFIG = {
   name: "WALNET",
   description: "Cloud PC on Aptos",
   logo: "/logo/logo.png",
-  github: "https://github.com/shuding/nextra-docs-template",
-  discord: "https://discord.com",
+  github: "https://github.com/Weminal-labs/walnet",
+  discord: "",
   social: {
     facebook: "#",
     discord: "#",

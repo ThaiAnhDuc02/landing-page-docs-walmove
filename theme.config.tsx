@@ -80,9 +80,9 @@ const config: DocsThemeConfig = {
   project: {
     link: APP_CONFIG.github,
   },
-  chat: {
-    link: APP_CONFIG.discord,
-  },
+  // chat: {
+  //   link: APP_CONFIG.discord,
+  // },
   docsRepositoryBase: APP_CONFIG.github,
   footer: {
     component: (
