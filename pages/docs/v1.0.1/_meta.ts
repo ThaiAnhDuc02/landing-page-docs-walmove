@@ -1,10 +1,22 @@
 const meta = {
-  "index": {
-    "title": "Your First Transation"
+  index: {
+    title: "Getting Stated",
   },
-  "build-e2e-dapp": {
-    "title": "Build an E2E Dapp with Aptos"
-  }
-}
+  faq: {
+    title: "FAQ",
+  },
+  Architecture: {
+    title: "Architecture",
+  },
+  Consumer: {
+    title: "Consumer",
+  },
+  Provider: {
+    title: "Provider",
+  },
+  external: {
+    title: "External Links",
+  },
+};
 
 export default meta;
