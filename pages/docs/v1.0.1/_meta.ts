@@ -5,13 +5,13 @@ const meta = {
   faq: {
     title: "FAQ",
   },
-  architecture: {
+  Architecture: {
     title: "Architecture",
   },
-  consumer: {
+  Consumer: {
     title: "Cloud Workspace",
   },
-  provider: {
+  Provider: {
     title: "Worker Workspace",
   },
   external: {
