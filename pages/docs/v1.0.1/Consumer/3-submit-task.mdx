@@ -1,0 +1,101 @@
+import { Steps } from 'nextra/components'
+
+# Submit Task
+
+This guide explains how to submit a heavy task to Walnet Cloud for processing, which can involve both CPU and GPU resources.
+
+## Overview
+
+When you handle a heavy and time-consuming task, such as training an AI model, you can submit this task to Walnet Cloud to be processed by data providers and GPU providers. The header node will distribute the tasks to the worker nodes for efficient processing.
+
+In the future, we plan to enable direct task submission from environments like Jupyter and VSCode.
+
+## Key Features
+
+### Distributed Computing
+- Automatic task distribution across multiple worker nodes
+- Efficient resource allocation based on task requirements
+- Real-time monitoring of task progress
+- Automatic error handling and task recovery
+
+### Resource Management
+- Dynamic scaling of computing resources
+- Support for both CPU and GPU intensive tasks
+- Optimized resource utilization
+- Cost-effective processing for large-scale computations
+
+### Security
+- End-to-end encryption of submitted code and data
+- Secure communication between nodes
+- Access control and authentication
+- Data privacy protection
+
+## Submission Process
+
+<Steps>
+### Access Submit Task
+
+Begin by selecting **Submit Task** from the menu to access the submission interface.
+
+![Submit Task](/assets/docs/v1.0.1/consumer/3.1.png)
+
+### Prepare Your Code
+
+Upload your code snippet for processing. The header node will handle distribution to worker nodes.
+
+![Submit Task](/assets/docs/v1.0.1/consumer/3.2.png)
+
+### Example Implementation
+
+Here's an example of a distributed computing task calculating Pi using the Nilakantha series algorithm:
+
+```python showLineNumbers
+def calculate_pi_nilakantha(iterations):
+    pi = 3.0
+    sign = 1
+    for i in range(2, 2 + 2 * iterations, 2):
+        pi += sign * (4 / (i * (i + 1) * (i + 2)))
+        sign *= -1  # Toggle sign after each iteration
+    return pi
+
+# Example usage of the function with 1 million iterations
+iterations = 1000000
+pi_estimate = calculate_pi_nilakantha(iterations)
+```
+
+### Monitor Execution
+
+Track your task's progress through our monitoring interface:
+- View real-time execution status
+- Monitor resource utilization
+- Track completion percentage
+- Access performance metrics
+
+### Review Results
+
+Once processing is complete:
+- Download computation results
+- View performance analytics
+- Access execution logs
+- Verify output accuracy
+</Steps>
+
+## Common Use Cases
+
+### Machine Learning
+- Model training
+- Hyperparameter optimization
+- Large-scale inference
+- Data preprocessing
+
+### Scientific Computing
+- Numerical simulations
+- Data analysis
+- Statistical modeling
+- Complex calculations
+
+### Big Data Processing
+- Data transformation
+- ETL operations
+- Batch processing
+- Real-time analytics

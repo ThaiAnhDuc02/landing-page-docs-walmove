@@ -5,13 +5,13 @@ const meta = {
   faq: {
     title: "FAQ",
   },
-  Architecture: {
+  architecture: {
     title: "Architecture",
   },
-  Consumer: {
+  consumer: {
     title: "Consumer",
   },
-  Provider: {
+  provider: {
     title: "Provider",
   },
   external: {
