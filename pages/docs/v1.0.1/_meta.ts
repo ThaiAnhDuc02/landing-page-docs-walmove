@@ -9,10 +9,10 @@ const meta = {
     title: "Architecture",
   },
   consumer: {
-    title: "Consumer",
+    title: "Cloud Workspace",
   },
   provider: {
-    title: "Provider",
+    title: "Worker Workspace",
   },
   external: {
     title: "External Links",
