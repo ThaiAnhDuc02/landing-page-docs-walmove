@@ -13,7 +13,7 @@ import BlurFade from '@/components/ui/blur-fade';
 const faqItems = [
   {
     question: "How do I get started?",
-    answer: "To get started with WALNET, simply sign up on our website and follow the easy setup instructions."
+    answer: "To get started with WALNUT, simply sign up on our website and follow the easy setup instructions."
   },
   {
     question: "What are the costs?",
@@ -21,11 +21,11 @@ const faqItems = [
   },
   {
     question: "Is it available on mobile devices?",
-    answer: "Yes, WALNET is accessible on mobile devices through our dedicated mobile app or web browser."
+    answer: "Yes, WALNUT is accessible on mobile devices through our dedicated mobile app or web browser."
   },
   {
     question: "Is my data secure?",
-    answer: "We prioritize your data security. WALNET uses advanced encryption and blockchain technology to ensure your information is protected."
+    answer: "We prioritize your data security. WALNUT uses advanced encryption and blockchain technology to ensure your information is protected."
   }
 ];
 
