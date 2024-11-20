@@ -6,6 +6,7 @@ import SparklesText from "@/components/ui/sparkles-text/SparklesText";
 import dynamic from "next/dynamic";
 import { APP_CONFIG } from "./config/app-config";
 import { useRouter } from "next/router";
+import { FC } from 'react';
 
 // Import components
 import Notice from "./components/Notice";
