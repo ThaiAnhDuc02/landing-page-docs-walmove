@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/assets/docs/v1.0.1/consumer/1.1.png" alt="WALNUT Banner" width="100%"/>
+  <img src="/public/assets/docs/v1.0.1/consumer/1.1.png" alt="WALNUT Banner" width="100%"/>
 
   # WALNUT
   ### Decentralized Computing Infrastructure for AI & ML
