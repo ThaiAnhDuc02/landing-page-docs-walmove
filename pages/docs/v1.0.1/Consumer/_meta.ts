@@ -1,9 +1,12 @@
 const meta = {
   "1-cloud-workspace": {
-    title: "Cloud Workspace",
+    title: "Introduction",
   },
   "2-deploy-cluster": {
     title: "Deploy Cluster",
+  },
+  "3-submit-task": {
+    title: "Submit Task",
   },
 };
 

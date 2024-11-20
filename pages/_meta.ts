@@ -1,7 +1,7 @@
 const meta = {
   index: {
     type: "page",
-    title: "About WALNET",
+    title: "About WALNUT",
     theme: {
       layout: "raw",
     },

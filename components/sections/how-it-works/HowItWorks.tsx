@@ -7,15 +7,15 @@ import { FadeText } from '@/components/ui/fade-text';
 
 const content = [
   {
-    title: "Log in to WALNET Cloud PC",
+    title: "Log in to WALNUT Cloud PC",
     description:
-      "Access our advanced cloud computing system quickly and securely. With WALNET, you can start your high-performance computing experience in just a few clicks.",
+      "Access our advanced cloud computing system quickly and securely. With WALNUT, you can start your high-performance computing experience in just a few clicks.",
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <img
           src="/assets/about/how_to_work/login3.png"
           className="w-full h-auto object-contain"
-          alt="Login to WALNET Cloud PC"
+          alt="Login to WALNUT Cloud PC"
         />
       </div>
     ),
@@ -23,13 +23,13 @@ const content = [
   {
     title: "Select your favorite game or dApp",
     description:
-      "Browse our extensive library of high-performance applications and games. Whether you're a gamer or a developer, WALNET offers a wide range of options to suit your needs.",
+      "Browse our extensive library of high-performance applications and games. Whether you're a gamer or a developer, WALNUT offers a wide range of options to suit your needs.",
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <img
           src="/assets/about/how_to_work/nft.png"
           className="w-full h-auto object-contain"
-          alt="Login to WALNET Cloud PC"
+          alt="Login to WALNUT Cloud PC"
         />
       </div>
     ),
@@ -37,13 +37,13 @@ const content = [
   {
     title: "Enjoy seamless performance",
     description:
-      "With WALNET, you can use GPU/CPU resources from your device or from nodes.",
+      "With WALNUT, you can use GPU/CPU resources from your device or from nodes.",
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <img
           src="/assets/about/how_to_work/sharing_gpu.png"
           className="w-full h-auto object-contain"
-          alt="Login to WALNET Cloud PC"
+          alt="Login to WALNUT Cloud PC"
         />
       </div>
     ),
@@ -64,7 +64,7 @@ const HowItWorks: React.FC = () => {
             framerProps={{
               show: { transition: { delay: 0.5, duration: 1 } },
             }}
-            text="Built on the powerful Move, WALNET gives you instant access to games and decentralized apps without the need for high-end hardware. All processing happens in the cloud, so you can focus on what matters - the experience."
+            text="Built on the powerful Move, WALNUT gives you instant access to games and decentralized apps without the need for high-end hardware. All processing happens in the cloud, so you can focus on what matters - the experience."
           />
         </div>
         <StickyScroll content={content} />
