@@ -1,65 +1,95 @@
-# Build a documentation site with Weminal Template using Nextra
-You can view at Readme File or [Notion Site](https://shadow-eagle-469.notion.site/Build-a-documentation-site-with-Weminal-Template-using-Nextra-ddb5af4b8a5546c99a5ad8fa0557850c?pvs=4) to gain this knowledge 
+# WALNUT - Decentralized Computing Infrastructure
 
-![image.png](/public/readme_assets/image.png)
+![WALNUT Banner](/public/assets/about/how_to_work/submit_task.png)
 
-## 1. What is Nextra?
+## Overview
 
-According to [Nextra.site](https://nextra.site/docs), Nextra is a framework on top of Next.js that lets you build content-focused websites. It has all the great features from Next.js, plus extra power to create Markdown-based content with ease.
+WALNUT is a decentralized infrastructure network (DePIN) that enables users to share and access GPU/CPU computing resources for AI model training, machine learning tasks, and other computational workloads. Built on the Sui blockchain with planned multi-chain support.
 
-You can read about Nextra here: [More about Nextra](https://nextra.site/).
+## Features
 
-With Nextra, you can create a full-blown documentation site with search functionality, syntax highlighting, embedding React components into MDX files, and more.
+### For Resource Providers
+- Share idle GPU/CPU resources
+- Set custom pricing and availability
+- Earn rewards through smart contracts
+- Real-time monitoring and analytics
+- Secure resource allocation
 
-Some companies that use Nextra for their documentation sites include [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [Tailwind](https://tailwindcss.com/), [Node.js](https://nodejs.org/en), [CodeSandbox](https://codesandbox.io/docs/learn/introduction/overview) and more.
+### For Users
+- Access distributed computing power
+- Submit AI/ML training tasks
+- Scale resources on demand
+- Real-time task monitoring
+- Cost-effective processing
 
-## 2. Features of Nextra
+## Technical Architecture
 
-- Light and dark mode theme.
-- Advanced syntax highlighting for code snippets.
-- Ability to use React components in markdown files.
-- Full-text search functionality.
+### Core Components
+1. **Resource Management**
+   - Node registration and verification
+   - Resource allocation and scaling
+   - Performance monitoring
+   - Health checks
 
-## 3. Getting Started With Weminal Document Template
+2. **Task Processing**
+   - Distributed task execution
+   - Automatic error handling
+   - Progress tracking
+   - Result verification
 
-A ready-made template for a documentation site is available on [Weminal’s template repository](https://github.com/Weminal-labs/document-template). So you have to create the repository from this template.
+3. **Security**
+   - End-to-end encryption
+   - Secure communication
+   - Access control
+   - Data privacy protection
 
-Now, in [Weminal’s template repository](https://github.com/Weminal-labs/document-template), click button `Use this template`:
+## Common Use Cases
 
-![image_1.png](/public/readme_assets/image_1.png)
+### Machine Learning
+- Model training
+- Hyperparameter optimization
+- Large-scale inference
+- Data preprocessing
 
-You need to fill some necessary information like this:
+### Scientific Computing
+- Numerical simulations
+- Data analysis
+- Statistical modeling
+- Complex calculations
 
-![image_2.png](/public/readme_assets/image_2.png)
+## Getting Started
 
-Repository was created!
+### For Resource Providers
+1. Register your node
+2. Specify GPU/CPU specifications
+3. Set pricing preferences
+4. Start sharing resources
 
-![image_3.png](/public/readme_assets/image_3.png)
+### For Users
+1. Submit computational tasks
+2. Monitor execution progress
+3. Access results and analytics
+4. Scale resources as needed
 
-You can clone this repository into your local machine by 
+## Security
 
-```jsx
-git clone your_repo
-```
+WALNUT prioritizes security through:
+- Blockchain-based verification
+- Encrypted data transmission
+- Secure containerization
+- Privacy protection measures
 
-Once you've cloned the git repository on your machine, you should have a folder structure like this:
+## Contact & Support
 
-![image_4.png](/public/readme_assets/image_4.png)
+- Website: [walnut.network](https://walnut.network)
+- Documentation: [docs.walnut.network](https://docs.walnut.network)
+- Twitter: [@walnut_network](https://twitter.com/walnut_network)
+- Discord: [Join Community](https://discord.gg/walnut)
 
-Now that you've cloned the repository navigate into the project directory and install the dependencies:
+## License
 
-```jsx
-npm install
-```
+MIT License
 
-When the installation is complete, start the local development server by running the following:
+---
 
-```jsx
-npm run dev
-```
-
-![image.png](/public/readme_assets/image.png)
-
-<aside>
-🎉 Tada! You done 🎉
-</aside>
+Built with ❤️ by the WALNUT Team
