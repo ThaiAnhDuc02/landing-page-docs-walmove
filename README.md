@@ -1,95 +1,84 @@
-# WALNUT - Decentralized Computing Infrastructure
+<div align="center">
+  <img src="/assets/docs/v1.0.1/consumer/1.1.png" alt="WALNUT Banner" width="100%"/>
 
-![WALNUT Banner](/public/assets/about/how_to_work/submit_task.png)
+  # WALNUT
+  ### Decentralized Computing Infrastructure for AI & ML
+  
+  [![Discord](https://img.shields.io/discord/1234567890?color=7289da&label=Discord&logo=discord&logoColor=ffffff)][discord]
+  [![Twitter](https://img.shields.io/twitter/follow/walnutio?label=Twitter&style=flat&logo=twitter)][twitter]
+  [![GitHub](https://img.shields.io/github/stars/walnut/walnut?style=social)][github]
 
-## Overview
+  **Built on Sui Blockchain | Multi-chain Support Coming Soon**
+</div>
 
-WALNUT is a decentralized infrastructure network (DePIN) that enables users to share and access GPU/CPU computing resources for AI model training, machine learning tasks, and other computational workloads. Built on the Sui blockchain with planned multi-chain support.
+## 🚀 Overview
 
-## Features
+WALNUT is a decentralized computing platform that enables sharing of GPU/CPU resources for AI training and machine learning tasks. Our platform creates a marketplace where users can contribute idle computing resources to earn rewards.
+
+## ✨ Features
 
 ### For Resource Providers
-- Share idle GPU/CPU resources
-- Set custom pricing and availability
-- Earn rewards through smart contracts
+- Monetize idle computing resources
+- Flexible resource allocation
+- Secure containerized environment
 - Real-time monitoring and analytics
-- Secure resource allocation
 
 ### For Users
-- Access distributed computing power
-- Submit AI/ML training tasks
-- Scale resources on demand
-- Real-time task monitoring
-- Cost-effective processing
+- Access to distributed computing power
+- Pay-as-you-go pricing model
+- Multiple deployment options
+- Enterprise-grade security
 
-## Technical Architecture
+## 🎯 Use Cases
 
-### Core Components
-1. **Resource Management**
-   - Node registration and verification
-   - Resource allocation and scaling
-   - Performance monitoring
-   - Health checks
+| 🤖 AI Training                | 🔬 Scientific Computing                  |
+| ---------------------------- | --------------------------------------- |
+| Train ML models efficiently  | Process complex scientific calculations |
+| Distributed learning support | High-performance computing clusters     |
+| Cost-effective scaling       | Research-oriented infrastructure        |
 
-2. **Task Processing**
-   - Distributed task execution
-   - Automatic error handling
-   - Progress tracking
-   - Result verification
+## 🛡️ Security Features
+- End-to-end encryption
+- Secure workload isolation
+- Regular security audits
+- Compliance certifications
 
-3. **Security**
-   - End-to-end encryption
-   - Secure communication
-   - Access control
-   - Data privacy protection
+## 🌟 Getting Started
 
-## Common Use Cases
+<div align="center">
+  <img src="/public/assets/about/how_to_work/submit_task.png" alt="Worker Dashboard" width="80%"/>
+</div>
 
-### Machine Learning
-- Model training
-- Hyperparameter optimization
-- Large-scale inference
-- Data preprocessing
+Visit our [Documentation][docs] to get started with WALNUT.
 
-### Scientific Computing
-- Numerical simulations
-- Data analysis
-- Statistical modeling
-- Complex calculations
+## 🤝 Community
 
-## Getting Started
+- Join our [Discord community][discord]
+- Follow us on [Twitter][twitter]
+- Read our [Blog][blog]
+- Explore our [GitHub][github]
 
-### For Resource Providers
-1. Register your node
-2. Specify GPU/CPU specifications
-3. Set pricing preferences
-4. Start sharing resources
+## 🔗 Quick Links
 
-### For Users
-1. Submit computational tasks
-2. Monitor execution progress
-3. Access results and analytics
-4. Scale resources as needed
-
-## Security
-
-WALNUT prioritizes security through:
-- Blockchain-based verification
-- Encrypted data transmission
-- Secure containerization
-- Privacy protection measures
-
-## Contact & Support
-
-- Website: [walnut.network](https://walnut.network)
-- Documentation: [docs.walnut.network](https://docs.walnut.network)
-- Twitter: [@walnut_network](https://twitter.com/walnut_network)
-- Discord: [Join Community](https://discord.gg/walnut)
-
-## License
-
-MIT License
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><a href="https://walnut.io">🌐 Website</a></td>
+      <td align="center"><a href="https://app.walnut.io">📊 Dashboard</a></td>
+      <td align="center"><a href="https://blog.walnut.io">📝 Blog</a></td>
+      <td align="center"><a href="https://docs.walnut.io">📚 Docs</a></td>
+    </tr>
+  </table>
+</div>
 
 ---
 
-Built with ❤️ by the WALNUT Team
+<div align="center">
+  <sub>Built with ❤️ by the WALNUT Team | Empowering the Future of Decentralized Computing</sub>
+</div>
+
+[discord]: https://discord.gg/walnut
+[twitter]: https://twitter.com/walnutio
+[github]: https://github.com/walnut
+[docs]: https://docs.walnut.io
+[blog]: https://blog.walnut.ioc
