@@ -20,6 +20,7 @@ const nextConfig = {
       "api.microlink.io", // Microlink Image Preview
     ],
   },
+  codeHighlight: true
 }
 
 export default withNextra(nextConfig)

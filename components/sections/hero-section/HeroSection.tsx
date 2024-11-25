@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
           <div className="text-7xl font-extrabold relative group inline-block">
             <BlurIn
               duration={1.25}
-              word="WALNET"
+              word="WALNUT"
               className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
             />
             <span className="absolute inset-0 blur-3xl bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-30 group-hover:opacity-50 transition-opacity duration-300"></span>
@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
         <div className='mb-[-10px]'>
           <BlurFade delay={0.25 * 7} inView>
             <p className="text-xl text-adaptive-text mb-12 max-w-3xl mx-auto">
-              Revolutionize your gaming and dApp experience with WALNET. Play AAA games and use dApps effortlessly from anywhere - all you need is an internet connection.
+              Revolutionize your gaming and dApp experience with WALNUT. Play AAA games and use dApps effortlessly from anywhere - all you need is an internet connection.
             </p>
           </BlurFade>
         </div>
@@ -68,7 +68,7 @@ const HeroSection: React.FC = () => {
           <div className='flex flex-row items-center justify-center md:flex-row gap-x-6'>
             <ShimmerButton
               onClick={() => {
-                window.open("https://walnet.vercel.app/", "_blank");
+                window.open("https://walnut.vercel.app/", "_blank");
               }}
               className="hover:scale-[1.15] shadow-2xl m-auto">
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
